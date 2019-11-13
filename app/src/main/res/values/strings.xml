@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">AK_Profile</string>
+    <string name="profile">Profile</string>
+    <string name="name">Aravindkumar Raj</string>
+    <string name="designation">Android Application Developer</string>
+    <string name="contactno">+91 - 7639894991</string>
+    <string name="mail"><a href="aravindhraj283@gmail.com">aravindhraj283@gmail.com</a></string>
+    <string name="address">Nilali Koundampalayam,\nKurukkapalayam(PO),\nKoduvai(VIA),\nTirupur - 638660</string>
+    <string name="description"><ul><li>Highly concentrate on testing and improving software development and process skills in the development phase.</li></ul></string>
+    <string name="experience"><ul><li>4+ years experience in Android Application Developement.</li></ul></string>
+    <string name="experience_company">Experience</string>
+    <string name="company_name">Company Name</string>
+    <string name="duration">Oct\'19</string>
+    <string name="location">Location</string>
+    <string name="desc_kg">\t Developing REST client-server application in android and used common libraries and tools : Android support libraries,
+                           ButterKnife,Event Bus,MVVM,Firebase,Material design,Google maps.</string>
+    <string name="desc_indus">\t  Creating application that reads and parses SOAP data into a Android application.\nKSOAP2 library to load and send data to service.
+        \n\nMVP,SOAP,Fast Networking,Volley.
+    </string>
+    <string name="osa">\t Designing and developing advanced applications for the Android platform.\n\n Tools are used to develope: SDK,XML,Sqlite,JSON,AsyncTask,Volley. </string>
+
+
+    <string name="mydiet"> Lose weight with a personal diet plan for your health and fitness goals.
+                        \n\n Buy 500+ healthy snacks and foods handpicked by nutritionists across 15 categories. Get healthy foods home delivered and Eat Better starting today!
+                        \n\n Online food ordering is the process of ordering food through the restaurant\'s through  mobile app inside the KGISL-GSS.
+                        \n\n The process consists of a employee choosing their choice, selecting the menu items, choosing an item, and finally confirming order and they can get it from canteen.
+
+                        \n\n\n Key Features of this Application : \n\t a)Employees can able know the sum of current day and current month summary.
+                                                \n\t b)More spending items with count for last 30 days shown in the report.
+    </string>
+
+    <string name="makkalauto">
+
+       \tMakkal Auto is a pioneer in providing Auto Rental services with more than 300 auto\'s at resonable price to the people. The service been provided since 2014. Still finding new ways to reach people.
+
+        \n\n\t Makkal Auto App is a new way of customer connecting service Focused specially on user friendly experience. Offering Online booking Services at affordable Prices by providing by means of auto Rentals and Call based booking services 24X7 Hours Auto Service.
+
+        \n\n\n\t Key Features of this application
+
+        \n\t1. Easy and simple registration process using your mobile number.
+        \n\t2. Choose Pick-up Place:
+        \n\ta) Via Map: Based on your GPS/GPRS location services, the application identifies the existing user location. You can choose that as Pick-up address or you can choose a different pick-up place by moving the Pointer to a desired pick up place on the map.
+    </string>
+
+    <string name="quicktaxi">
+
+       \tQuick is a pioneer in providing Car Rental services with more than 100 car\'s at resonable price to the people. Still finding new ways to reach people.
+
+        \n\n\t QuickTaxi App is a new way of customer connecting service Focused specially on user friendly experience. Offering Online booking Services at affordable Prices by providing by means of auto Rentals and Call based booking services 24X7 Hours Taxi Service.
+
+        \n\n\n\t Key Features of this application
+
+        \n\t1. Easy and simple registration process using your mobile number.
+        \n\t2. Choose Pick-up Place:
+        \n\ta) Via Map: Based on your GPS/GPRS location services, the application identifies the existing user location. You can choose that as Pick-up address or you can choose a different pick-up place by moving the Pointer to a desired pick up place on the map.
+        \n\tb) mini,suv and sedan types of cab\'s available with the trip type of local,package and outstation.
+    </string>
+
+    <string name="indus">
+
+        \t1.Employees log in to the application through SSP User Name and Password.
+        \n\t2.Select the client details to which the employee is working.
+        \n\t3.The  respective login and sent to project manager and client SAP Co-Ordinator.
+        \n\t4.Then the username and password is entered by the employee who attempts to login to the system.
+        \n\t5.Once after the login is successfully done the attendance gets created.
+
+        \n\nKey Features of this application:
+        \n\t a)Employees can apply their leave and permission\'s through this application.
+        \n\tb)User view their attendance details consist of date,time and their location vice-versa.
+
+    </string>
+
+    <string name="classicpolo">
+        \tClassic Polo, One of the India\’s finest indigenously manufactured T-shirt brand was launched in 2001, Feb 14th by Royal Classic Groups. The flagship brand of Royal Classic Groups, Royal Classic Group was Incorporated in 1991, it has all the value chains from fiber to fashions.
+        \n\t Order Steps : \n\t 1.Enquiry
+                                \n\t\t2.Quote
+                                \n\t\t3.Sale Order
+                                \n\t\t4.Sales Return
+                                \n\t\t5.Order History
+                                \n\t\t6.Outstanding
+                                \n\t\t7.Invoice details
+
+    </string>
+    <string name="education">Education</string>
+
+</resources>
