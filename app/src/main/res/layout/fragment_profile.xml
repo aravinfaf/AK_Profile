@@ -10,6 +10,16 @@
         android:layout_height="@dimen/dimen_350sp"
         android:background="@drawable/ic_profile" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <RelativeLayout
         android:id="@+id/info_RL"
         android:layout_width="match_parent"
@@ -86,7 +96,7 @@
                         <ImageView
                             android:layout_width="@dimen/dimen_30sp"
                             android:layout_height="@dimen/dimen_30sp"
-                            android:src="@drawable/ic_mobile_phone"
+                            android:src="@drawable/ic_phone_book"
                             android:layout_margin="@dimen/dimen_5sp"/>
 
                         <TextView
@@ -96,6 +106,7 @@
                             android:layout_gravity="center"
                             android:paddingLeft="@dimen/dimen_40sp"
                             android:text="@string/contactno"
+                            android:textColor="@color/black"
                             android:fontFamily="@font/baumans" />
 
 
@@ -121,7 +132,8 @@
                             android:layout_gravity="center"
                             android:paddingLeft="@dimen/dimen_40sp"
                             android:text="@string/mail"
-                            android:fontFamily="@font/baumans" />
+                            android:fontFamily="@font/baumans"
+                            android:textColor="@color/black"/>
 
                     </LinearLayout>
 
@@ -137,6 +149,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/address_RL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/info_RL">
@@ -180,4 +193,56 @@
 
     </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/linkedin_RL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_RL">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/linkedin_IV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50sp"
+                        android:src="@drawable/ic_linkedin"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/facebook_IV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50sp"
+                        android:src="@drawable/ic_facebook"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/insta_IV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50sp"
+                        android:src="@drawable/ic_instagram"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>

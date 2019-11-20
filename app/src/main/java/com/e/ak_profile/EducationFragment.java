@@ -45,7 +45,7 @@ public class EducationFragment extends Fragment {
     private void educationdata() {
 
         data=new ArrayList<EducationModel>();
-        data.add(new EducationModel("Bannari Amman Istitue of Technology","Sathyamangalam,Erode","Aug'2011 - May'2105","B.E.ECE"));
+        data.add(new EducationModel("Bannari Amman Institute of Technology","Sathyamangalam,Erode","Aug'2011 - May'2015","B.E.ECE"));
 
         edu_RV.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter=new Education_Adapter(getActivity(),data);

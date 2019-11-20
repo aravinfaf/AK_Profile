@@ -38,5 +38,6 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.2.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'com.airbnb.android:lottie:3.1.0'
+    implementation 'com.stone.vega.library:VegaLayoutManager:1.0.6'
 
 }

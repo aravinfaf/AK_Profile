@@ -7,7 +7,7 @@
     <string name="mail"><a href="aravindhraj283@gmail.com">aravindhraj283@gmail.com</a></string>
     <string name="address">Nilali Koundampalayam,\nKurukkapalayam(PO),\nKoduvai(VIA),\nTirupur - 638660</string>
     <string name="description"><ul><li>Highly concentrate on testing and improving software development and process skills in the development phase.</li></ul></string>
-    <string name="experience"><ul><li>4+ years experience in Android Application Developement.</li></ul></string>
+    <string name="experience"><ul><li>3+ years experience in Android Application Developement.</li></ul></string>
     <string name="experience_company">Experience</string>
     <string name="company_name">Company Name</string>
     <string name="duration">Oct\'19</string>
@@ -82,5 +82,8 @@
 
     </string>
     <string name="education">Education</string>
+    <string name="linkedin">https://www.linkedin.com/in/aravindkumar-raj-71aa5b103</string>
+    <string name="facebook">https://www.facebook.com/sandaravind.kumar</string>
+    <string name="insta">https://www.instagram.com/im_aravind_ak/</string>
 
 </resources>

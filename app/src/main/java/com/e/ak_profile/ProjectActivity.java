@@ -45,7 +45,7 @@ public class ProjectActivity extends AppCompatActivity {
 
         String name=getIntent().getStringExtra("name");
         String desc=getIntent().getStringExtra("desc");
-         url=getIntent().getStringExtra("url");
+        url=getIntent().getStringExtra("url");
         int image=getIntent().getIntExtra("image",0);
         Log.e("Pos",image+"");
 

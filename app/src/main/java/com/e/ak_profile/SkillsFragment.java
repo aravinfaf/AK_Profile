@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -29,6 +30,8 @@ public class SkillsFragment extends Fragment {
     ArrayList<SkillModel> data;
     Skills_Adapter adapter;
 
+    private StaggeredGridLayoutManager _sGridLayoutManager;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -50,8 +53,10 @@ public class SkillsFragment extends Fragment {
         data.add(new SkillModel(R.drawable.sqlite,"Sqlite"));
         data.add(new SkillModel(R.drawable.kotlin,"Kotlin"));
 
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getActivity(), 2,GridLayoutManager.HORIZONTAL,false);
-        skill_RV.setLayoutManager(mLayoutManager);
+        _sGridLayoutManager = new StaggeredGridLayoutManager(2,
+                StaggeredGridLayoutManager.VERTICAL);
+
+        skill_RV.setLayoutManager(_sGridLayoutManager);
         adapter=new Skills_Adapter(getActivity(),data);
         skill_RV.setAdapter(adapter);
     }
