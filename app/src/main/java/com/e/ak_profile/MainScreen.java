@@ -41,7 +41,8 @@ public class MainScreen extends Fragment {
     CircleImageView profile_image;
     @BindView(R.id.contactno_TV)
     TextView contactno_TV;
-
+    @BindView(R.id.cvIV)
+    ImageView cvIV;
     @BindView(R.id.mail_TV)
     TextView mail_TV;
 
@@ -91,18 +92,18 @@ public class MainScreen extends Fragment {
         LinearLayout whatsapp_LL=bottomSheetDialog.findViewById(R.id.whatsapp_LL);
 
         dial_LL.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", contactno_TV.getText().toString(), null)));
 
-                Uri callUri = Uri.parse("tel: "+contactno_TV.getText().toString().trim());
-                Intent callIntent = new Intent(Intent.ACTION_CALL,callUri);
-                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_NO_USER_ACTION);
-                startActivity(callIntent);
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+contactno_TV.getText().toString().trim()));
+                startActivity(intent);
             }
         });
 
         sms_LL.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Uri uri = Uri.parse("smsto:" + contactno_TV.getText().toString().trim());
@@ -117,19 +118,24 @@ public class MainScreen extends Fragment {
             public void onClick(View view) {
 
                 PackageManager packageManager = getActivity().getPackageManager();
-                Intent i = new Intent(Intent.ACTION_VIEW);
 
-                try {
-                    String url = "https://api.whatsapp.com/send?phone=" + contactno_TV.getText().toString().trim() + "&text=" + URLEncoder.encode("", "UTF-8");
-                    i.setPackage("com.whatsapp");
-                    i.setData(Uri.parse(url));
-                    if (i.resolveActivity(packageManager) != null) {
-                        getActivity().startActivity(i);
+                if(packageManager!=null) {
+
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+
+                    try {
+                        String url = "https://api.whatsapp.com/send?phone=" + contactno_TV.getText().toString().trim() + "&text=" + URLEncoder.encode("", "UTF-8");
+                        i.setPackage("com.whatsapp");
+                        i.setData(Uri.parse(url));
+                        if (i.resolveActivity(packageManager) != null) {
+                            getActivity().startActivity(i);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
+                }else{
+                    Toast.makeText(getActivity(),"WhatsApp not installed!!!",Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }
@@ -163,5 +169,10 @@ public class MainScreen extends Fragment {
         });
         nagDialog.show();
 
+    }
+
+    @OnClick(R.id.cvIV)
+    public void viewcv(View view){
+        startActivity(new Intent(getActivity(),ViewResume.class));
     }
 }

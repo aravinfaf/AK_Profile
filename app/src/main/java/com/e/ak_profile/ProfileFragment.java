@@ -77,11 +77,9 @@ public class ProfileFragment extends Fragment {
         dial_LL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", contactno_TV.getText().toString(), null)));
 
                 Uri callUri = Uri.parse("tel: "+contactno_TV.getText().toString().trim());
-                Intent callIntent = new Intent(Intent.ACTION_CALL,callUri);
-                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_NO_USER_ACTION);
+                Intent callIntent = new Intent(Intent.ACTION_DIAL,callUri);
                 startActivity(callIntent);
             }
         });

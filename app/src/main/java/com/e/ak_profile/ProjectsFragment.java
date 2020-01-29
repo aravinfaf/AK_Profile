@@ -45,7 +45,7 @@ public class ProjectsFragment extends Fragment {
 
         data=new ArrayList<ProjectModel>();
 
-        data.add(new ProjectModel("My Diet",R.drawable.logo,getString(R.string.mydiet),"https://play.google.com/store/apps/details?id=com.e.cafeteria"));
+        data.add(new ProjectModel("MyDiet",R.drawable.diet,getString(R.string.mydiet),"https://play.google.com/store/apps/details?id=com.kgisl.mydiet"));
         data.add(new ProjectModel("Makkal Auto",R.drawable.makkalauto,getString(R.string.makkalauto),"https://play.google.com/store/apps/details?id=com.kgislgss.mtc&hl=en_IN"));
         data.add(new ProjectModel("Quick Taxi",R.drawable.quicklogo,getString(R.string.quicktaxi),"https://play.google.com/store/apps/details?id=com.kgislgss.quicktaxi&hl=en_IN"));
         data.add(new ProjectModel("Indus SSP",R.drawable.ssp,getString(R.string.indus),"https://play.google.com/store/apps/details?id=com.ssp.IndusPortal&hl=en_IN"));

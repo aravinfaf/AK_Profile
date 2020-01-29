@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AK_Profile</string>
+    <string name="app_name">AK Profile</string>
     <string name="profile">Profile</string>
     <string name="name">Aravindkumar Raj</string>
     <string name="designation">Android Application Developer</string>
@@ -85,5 +85,8 @@
     <string name="linkedin">https://www.linkedin.com/in/aravindkumar-raj-71aa5b103</string>
     <string name="facebook">https://www.facebook.com/sandaravind.kumar</string>
     <string name="insta">https://www.instagram.com/im_aravind_ak/</string>
+    <string name="permission_content">App permissions govern what your app is allowed to do and access. Granting permission allows the app to use the feature.</string>
+    <string name="permission">Permission</string>
+    <string name="aravindkumar_raj_profile">Aravindkumar Raj Profile</string>
 
 </resources>

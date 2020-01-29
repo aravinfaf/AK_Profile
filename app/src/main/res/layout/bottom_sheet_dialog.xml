@@ -27,8 +27,8 @@
             android:text="SMS"
             android:layout_gravity="center"
             android:fontFamily="@font/baumans"
-            android:layout_marginTop="@dimen/dimen_5sp"/>
-
+            android:layout_marginTop="@dimen/dimen_5sp"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +50,8 @@
             android:text="Dial"
             android:layout_gravity="center"
             android:fontFamily="@font/baumans"
-            android:layout_marginTop="@dimen/dimen_5sp"/>
+            android:layout_marginTop="@dimen/dimen_5sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -73,7 +74,8 @@
             android:text="WhatsApp"
             android:layout_gravity="center"
             android:fontFamily="@font/baumans"
-            android:layout_marginTop="@dimen/dimen_5sp"/>
+            android:layout_marginTop="@dimen/dimen_5sp"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

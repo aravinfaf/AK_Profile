@@ -11,6 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aravindkumar_raj_profile"
+            android:textColor="@color/black"
+            android:layout_above="@+id/phone_LA"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_50sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:fontFamily="@font/baumans"/>
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/phone_LA"
         android:layout_width="@dimen/dimen_200sp"

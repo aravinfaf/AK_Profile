@@ -7,8 +7,8 @@ android {
         applicationId "com.e.ak_profile"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -38,6 +38,10 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.2.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     implementation 'com.airbnb.android:lottie:3.1.0'
-    implementation 'com.stone.vega.library:VegaLayoutManager:1.0.6'
+    implementation('com.paytm:pgplussdk:1.4.4') {
+        transitive = true;
+    }
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
 
 }

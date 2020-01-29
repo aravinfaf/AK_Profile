@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.e("POS",""+position);
 
-
                 switch (position){
 
                     case 0:

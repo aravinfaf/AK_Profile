@@ -46,6 +46,8 @@ public class EducationFragment extends Fragment {
 
         data=new ArrayList<EducationModel>();
         data.add(new EducationModel("Bannari Amman Institute of Technology","Sathyamangalam,Erode","Aug'2011 - May'2015","B.E.ECE"));
+        data.add(new EducationModel("VMCDV Hr Sec School","Thayampalayam,Tiruppur","June'2010 - May'2011","XII"));
+        data.add(new EducationModel("VMCDV Hr Sec School","Thayampalayam,Tiruppur","June'2008 - May'2009","X"));
 
         edu_RV.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter=new Education_Adapter(getActivity(),data);

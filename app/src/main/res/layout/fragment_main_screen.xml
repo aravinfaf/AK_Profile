@@ -148,6 +148,15 @@
                         app:civ_border_color="@color/white"
                         app:civ_border_width="2dp" />
 
+                    <ImageView
+                        android:id="@+id/cvIV"
+                        android:layout_width="@dimen/dimen_30sp"
+                        android:layout_height="@dimen/dimen_30sp"
+                        android:src="@drawable/curriculum"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/dimen_5sp"/>
+
 
                 </RelativeLayout>
 

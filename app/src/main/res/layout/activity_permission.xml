@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PermissionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/testToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/permission"
+            android:fontFamily="@font/baumans"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baumans"
+            android:text="@string/permission_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_permission"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/permission_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/baumans"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:text="Allow"
+            android:elevation="7dp"
+            android:padding="@dimen/dimen_10sp"
+            android:layout_marginTop="@dimen/dimen_70sp"/>
+
+    </LinearLayout>
+</LinearLayout>
